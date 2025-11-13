@@ -1,7 +1,8 @@
-nums = input("Enter the numbers: ")
+nums1 = input("Enter the numbers: ")
+nums2 = nums1.split() 
 numbers = []
 
-for x in nums.split():
+for x in nums2:
     numbers.append(int(x))
 
 positives = []
