@@ -1,11 +1,13 @@
 text = input("Enter your text: ")
-chars = list(text)
 new_chars = []
-
-for c in chars:
+in_space = False
+for c in text:
     if c == " ":
-        new_chars.append("_")
+        if not in_space:
+            new_chars.append("_")
+            in_space = True
     else:
         new_chars.append(c)
+        in_space = False
 new_text = "".join(new_chars)
 print(new_text)
